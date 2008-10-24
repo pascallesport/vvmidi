@@ -308,9 +308,45 @@
 }
 - (void) sendMsgs:(NSArray *)a	{
 	NSLog(@"VVMIDINode:sendMsgs:");
-	if ((enabled!=YES) || (sender!=YES))
+	if ((enabled!=YES) || (sender!=YES) || (a==nil) || ([a count]<1))
 		return;
-	NSLog(@"\t\tsending to %@",name);
+	//NSLog(@"\t\tsending to %@",name);
+	
+	MIDIPacket		*newPacket = nil;
+	OSStatus		err = noErr;
+	NSEnumerator	*it = [a objectEnumerator];
+	VVMIDIMessage	*msgPtr;
+	
+	while (msgPtr = [it nextObject])	{
+		scratchStruct[0] = [msgPtr type] | [msgPtr channel];
+		scratchStruct[1] = [msgPtr data1];
+		scratchStruct[2] = [msgPtr data2];
+		
+		newPacket = MIDIPacketListAdd(packetList,1024,currentPacket,0,3,scratchStruct);
+		if (newPacket == NULL)	{
+			NSLog(@"\t\terror adding new packet");
+			return;
+		}
+		currentPacket = newPacket;
+	}
+	
+	//	if this is a virtual sender, this node "owns" the source- i need to call 'MIDIReceived'
+	if (virtualSender)	{
+		err = MIDIReceived(endpointRef,packetList);
+		if (err != noErr)	{
+			NSLog(@"\t\terr %ld at MIDIReceived A",err);
+		}
+	}
+	//	if this isn't a virtual sender, something else is managing the source- call 'MIDISend'
+	else	{
+		err = MIDISend(portRef,endpointRef,packetList);
+		if (err != noErr)	{
+			NSLog(@"\t\terr %ld at MIDISend A",err);
+			return;
+		}
+	}
+	
+	currentPacket = MIDIPacketListInit(packetList);
 }
 
 - (BOOL) sender	{
