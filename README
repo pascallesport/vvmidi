@@ -1,0 +1,9 @@
+VVMIDI is an Objective-c framework which simplifies working with MIDI in OS X.  A sample application capable of sending and receiving MIDI built from the framework is included.
+
+VVMIDI is licensed under a Creative Commons Attribution-Noncommercial-Share Alike license:
+
+http://creativecommons.org/licenses/by-nc-sa/3.0/us/
+
+Permissions beyond the scope of this license may be available by contacting the author:
+
+ray@vidvox.net

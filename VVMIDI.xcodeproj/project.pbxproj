@@ -1,0 +1,533 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		96CC133F0EAE263F001E50E1 /* ALL */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 96CC134B0EAE2670001E50E1 /* Build configuration list for PBXAggregateTarget "ALL" */;
+			buildPhases = (
+			);
+			dependencies = (
+				96CC13430EAE2646001E50E1 /* PBXTargetDependency */,
+				96CC13450EAE2649001E50E1 /* PBXTargetDependency */,
+			);
+			name = ALL;
+			productName = ALL;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		8DC2EF530486A6940098B216 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C1666FE841158C02AAC07 /* InfoPlist.strings */; };
+		8DC2EF570486A6940098B216 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */; };
+		960711D50EB12FA600E62A4A /* VVMIDI.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8DC2EF5B0486A6940098B216 /* VVMIDI.framework */; };
+		965C53CE0EAB810800E7EE5C /* VVMIDI.h in Headers */ = {isa = PBXBuildFile; fileRef = 965C53CD0EAB810800E7EE5C /* VVMIDI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		965C54120EAB83C900E7EE5C /* CoreMIDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 965C54110EAB83C900E7EE5C /* CoreMIDI.framework */; };
+		965C541E0EAB88A800E7EE5C /* VVMIDIManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 965C541A0EAB88A800E7EE5C /* VVMIDIManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		965C541F0EAB88A800E7EE5C /* VVMIDIMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 965C541B0EAB88A800E7EE5C /* VVMIDIMessage.m */; };
+		965C54200EAB88A800E7EE5C /* VVMIDIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 965C541C0EAB88A800E7EE5C /* VVMIDIManager.m */; };
+		965C54210EAB88A800E7EE5C /* VVMIDIMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 965C541D0EAB88A800E7EE5C /* VVMIDIMessage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9667E5750EAFC598002CBD50 /* VVMIDINode.h in Headers */ = {isa = PBXBuildFile; fileRef = 9667E5730EAFC598002CBD50 /* VVMIDINode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9667E5760EAFC598002CBD50 /* VVMIDINode.m in Sources */ = {isa = PBXBuildFile; fileRef = 9667E5740EAFC598002CBD50 /* VVMIDINode.m */; };
+		96CC132B0EAE25AC001E50E1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 96CC132A0EAE25AC001E50E1 /* main.m */; };
+		96CC13390EAE2618001E50E1 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96CC13380EAE2618001E50E1 /* MainMenu.xib */; };
+		96CC134A0EAE2670001E50E1 /* AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96CC13490EAE2670001E50E1 /* AppController.m */; };
+		96CC135B0EAE26F4001E50E1 /* VVMIDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DC2EF5B0486A6940098B216 /* VVMIDI.framework */; };
+		96CC13620EAE2732001E50E1 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0867D6A5FE840307C02AAC07 /* AppKit.framework */; };
+		96CC13630EAE2732001E50E1 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		96CC13420EAE2646001E50E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8DC2EF4F0486A6940098B216;
+			remoteInfo = VVMIDI;
+		};
+		96CC13440EAE2649001E50E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 96CC131E0EAE2544001E50E1;
+			remoteInfo = VVMIDITester;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		960711DD0EB12FAA00E62A4A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				960711D50EB12FA600E62A4A /* VVMIDI.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0867D69BFE84028FC02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		0867D6A5FE840307C02AAC07 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		089C1667FE841158C02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		32DBCF5E0370ADEE00C91783 /* VVMIDI_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VVMIDI_Prefix.pch; sourceTree = "<group>"; };
+		8DC2EF5A0486A6940098B216 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8DC2EF5B0486A6940098B216 /* VVMIDI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = VVMIDI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		965C53CD0EAB810800E7EE5C /* VVMIDI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VVMIDI.h; sourceTree = "<group>"; };
+		965C54110EAB83C900E7EE5C /* CoreMIDI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMIDI.framework; path = /System/Library/Frameworks/CoreMIDI.framework; sourceTree = "<absolute>"; };
+		965C541A0EAB88A800E7EE5C /* VVMIDIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VVMIDIManager.h; sourceTree = "<group>"; };
+		965C541B0EAB88A800E7EE5C /* VVMIDIMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VVMIDIMessage.m; sourceTree = "<group>"; };
+		965C541C0EAB88A800E7EE5C /* VVMIDIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VVMIDIManager.m; sourceTree = "<group>"; };
+		965C541D0EAB88A800E7EE5C /* VVMIDIMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VVMIDIMessage.h; sourceTree = "<group>"; };
+		9667E5730EAFC598002CBD50 /* VVMIDINode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VVMIDINode.h; sourceTree = "<group>"; };
+		9667E5740EAFC598002CBD50 /* VVMIDINode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VVMIDINode.m; sourceTree = "<group>"; };
+		96CC131F0EAE2544001E50E1 /* VVMIDITester.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VVMIDITester.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		96CC13210EAE2544001E50E1 /* VVMIDITester-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VVMIDITester-Info.plist"; sourceTree = "<group>"; };
+		96CC132A0EAE25AC001E50E1 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		96CC13380EAE2618001E50E1 /* MainMenu.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
+		96CC13480EAE2670001E50E1 /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppController.h; sourceTree = "<group>"; };
+		96CC13490EAE2670001E50E1 /* AppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppController.m; sourceTree = "<group>"; };
+		D2F7E79907B2D74100F64583 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8DC2EF560486A6940098B216 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DC2EF570486A6940098B216 /* Cocoa.framework in Frameworks */,
+				965C54120EAB83C900E7EE5C /* CoreMIDI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96CC131D0EAE2544001E50E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96CC135B0EAE26F4001E50E1 /* VVMIDI.framework in Frameworks */,
+				96CC13620EAE2732001E50E1 /* AppKit.framework in Frameworks */,
+				96CC13630EAE2732001E50E1 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034768DFFF38A50411DB9C8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8DC2EF5B0486A6940098B216 /* VVMIDI.framework */,
+				96CC131F0EAE2544001E50E1 /* VVMIDITester.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0867D691FE84028FC02AAC07 /* VVMIDI */ = {
+			isa = PBXGroup;
+			children = (
+				96CC132D0EAE25B8001E50E1 /* Sample App */,
+				08FB77AEFE84172EC02AAC07 /* Framework */,
+				32C88DFF0371C24200C91783 /* Other Sources */,
+				089C1665FE841158C02AAC07 /* Resources */,
+				0867D69AFE84028FC02AAC07 /* External Frameworks and Libraries */,
+				034768DFFF38A50411DB9C8B /* Products */,
+				96CC13210EAE2544001E50E1 /* VVMIDITester-Info.plist */,
+			);
+			name = VVMIDI;
+			sourceTree = "<group>";
+		};
+		0867D69AFE84028FC02AAC07 /* External Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7B0FEA5585E11CA2CBB /* Linked Frameworks */,
+				1058C7B2FEA5585E11CA2CBB /* Other Frameworks */,
+			);
+			name = "External Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		089C1665FE841158C02AAC07 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8DC2EF5A0486A6940098B216 /* Info.plist */,
+				089C1666FE841158C02AAC07 /* InfoPlist.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		08FB77AEFE84172EC02AAC07 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				965C53CD0EAB810800E7EE5C /* VVMIDI.h */,
+				965C541D0EAB88A800E7EE5C /* VVMIDIMessage.h */,
+				965C541B0EAB88A800E7EE5C /* VVMIDIMessage.m */,
+				9667E5730EAFC598002CBD50 /* VVMIDINode.h */,
+				9667E5740EAFC598002CBD50 /* VVMIDINode.m */,
+				965C541A0EAB88A800E7EE5C /* VVMIDIManager.h */,
+				965C541C0EAB88A800E7EE5C /* VVMIDIManager.m */,
+			);
+			name = Framework;
+			sourceTree = "<group>";
+		};
+		1058C7B0FEA5585E11CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				965C54110EAB83C900E7EE5C /* CoreMIDI.framework */,
+				1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7B2FEA5585E11CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0867D6A5FE840307C02AAC07 /* AppKit.framework */,
+				D2F7E79907B2D74100F64583 /* CoreData.framework */,
+				0867D69BFE84028FC02AAC07 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		32C88DFF0371C24200C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32DBCF5E0370ADEE00C91783 /* VVMIDI_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		96CC132D0EAE25B8001E50E1 /* Sample App */ = {
+			isa = PBXGroup;
+			children = (
+				96CC13380EAE2618001E50E1 /* MainMenu.xib */,
+				96CC132A0EAE25AC001E50E1 /* main.m */,
+				96CC13480EAE2670001E50E1 /* AppController.h */,
+				96CC13490EAE2670001E50E1 /* AppController.m */,
+			);
+			name = "Sample App";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		8DC2EF500486A6940098B216 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				965C53CE0EAB810800E7EE5C /* VVMIDI.h in Headers */,
+				965C541E0EAB88A800E7EE5C /* VVMIDIManager.h in Headers */,
+				965C54210EAB88A800E7EE5C /* VVMIDIMessage.h in Headers */,
+				9667E5750EAFC598002CBD50 /* VVMIDINode.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		8DC2EF4F0486A6940098B216 /* VVMIDI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB91AD08733DA50010E9CD /* Build configuration list for PBXNativeTarget "VVMIDI" */;
+			buildPhases = (
+				8DC2EF500486A6940098B216 /* Headers */,
+				8DC2EF520486A6940098B216 /* Resources */,
+				8DC2EF540486A6940098B216 /* Sources */,
+				8DC2EF560486A6940098B216 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VVMIDI;
+			productInstallPath = "$(HOME)/Library/Frameworks";
+			productName = VVMIDI;
+			productReference = 8DC2EF5B0486A6940098B216 /* VVMIDI.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		96CC131E0EAE2544001E50E1 /* VVMIDITester */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 96CC13240EAE2544001E50E1 /* Build configuration list for PBXNativeTarget "VVMIDITester" */;
+			buildPhases = (
+				96CC131B0EAE2544001E50E1 /* Resources */,
+				96CC131C0EAE2544001E50E1 /* Sources */,
+				96CC131D0EAE2544001E50E1 /* Frameworks */,
+				960711DD0EB12FAA00E62A4A /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VVMIDITester;
+			productName = VVMIDITester;
+			productReference = 96CC131F0EAE2544001E50E1 /* VVMIDITester.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0867D690FE84028FC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB91B108733DA50010E9CD /* Build configuration list for PBXProject "VVMIDI" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 0867D691FE84028FC02AAC07 /* VVMIDI */;
+			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8DC2EF4F0486A6940098B216 /* VVMIDI */,
+				96CC131E0EAE2544001E50E1 /* VVMIDITester */,
+				96CC133F0EAE263F001E50E1 /* ALL */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8DC2EF520486A6940098B216 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DC2EF530486A6940098B216 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96CC131B0EAE2544001E50E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96CC13390EAE2618001E50E1 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8DC2EF540486A6940098B216 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				965C541F0EAB88A800E7EE5C /* VVMIDIMessage.m in Sources */,
+				965C54200EAB88A800E7EE5C /* VVMIDIManager.m in Sources */,
+				9667E5760EAFC598002CBD50 /* VVMIDINode.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96CC131C0EAE2544001E50E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96CC132B0EAE25AC001E50E1 /* main.m in Sources */,
+				96CC134A0EAE2670001E50E1 /* AppController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		96CC13430EAE2646001E50E1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8DC2EF4F0486A6940098B216 /* VVMIDI */;
+			targetProxy = 96CC13420EAE2646001E50E1 /* PBXContainerItemProxy */;
+		};
+		96CC13450EAE2649001E50E1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 96CC131E0EAE2544001E50E1 /* VVMIDITester */;
+			targetProxy = 96CC13440EAE2649001E50E1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		089C1666FE841158C02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C1667FE841158C02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB91AE08733DA50010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = VVMIDI_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "@executable_path/../Frameworks";
+				PRODUCT_NAME = VVMIDI;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		1DEB91AF08733DA50010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = VVMIDI_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "@executable_path/../Frameworks";
+				PRODUCT_NAME = VVMIDI;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+		1DEB91B208733DA50010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INSTALL_PATH = "@executable_path/../Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.5;
+			};
+			name = Debug;
+		};
+		1DEB91B308733DA50010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INSTALL_PATH = "@executable_path/../Frameworks";
+				PREBINDING = NO;
+				SDKROOT = macosx10.5;
+			};
+			name = Release;
+		};
+		96CC13220EAE2544001E50E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "VVMIDITester-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = VVMIDITester;
+			};
+			name = Debug;
+		};
+		96CC13230EAE2544001E50E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "VVMIDITester-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = VVMIDITester;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		96CC13400EAE2640001E50E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = ALL;
+			};
+			name = Debug;
+		};
+		96CC13410EAE2640001E50E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				PRODUCT_NAME = ALL;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB91AD08733DA50010E9CD /* Build configuration list for PBXNativeTarget "VVMIDI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB91AE08733DA50010E9CD /* Debug */,
+				1DEB91AF08733DA50010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB91B108733DA50010E9CD /* Build configuration list for PBXProject "VVMIDI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB91B208733DA50010E9CD /* Debug */,
+				1DEB91B308733DA50010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		96CC13240EAE2544001E50E1 /* Build configuration list for PBXNativeTarget "VVMIDITester" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96CC13220EAE2544001E50E1 /* Debug */,
+				96CC13230EAE2544001E50E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		96CC134B0EAE2670001E50E1 /* Build configuration list for PBXAggregateTarget "ALL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96CC13400EAE2640001E50E1 /* Debug */,
+				96CC13410EAE2640001E50E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0867D690FE84028FC02AAC07 /* Project object */;
+}

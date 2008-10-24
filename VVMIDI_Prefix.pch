@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'VVMIDI' target in the 'VVMIDI' project.
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif
