@@ -34,6 +34,9 @@
 - (void) sendMsg:(VVMIDIMessage *)m;
 - (void) sendMsgs:(NSArray *)a;
 
+- (VVMIDINode *) findDestNodeNamed:(NSString *)n;	//	finds a destination node with a given name
+- (VVMIDINode *) findSourceNodeNamed:(NSString *)n;	//	finds a source node with a given name
+
 //	these methods exist so subclasses of me can override them to use custom subclasses of VVMIDINode
 - (id) receivingNodeClass;
 - (id) sendingNodeClass;
@@ -43,6 +46,8 @@
 
 - (NSArray *) sourceArray;
 - (NSArray *) destArray;
+- (VVMIDINode *) virtualSource;
+- (VVMIDINode *) virtualDest;
 - (id) delegate;
 - (void) setDelegate:(id)n;
 

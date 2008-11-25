@@ -188,11 +188,12 @@
 	if ((a==nil) || ([a count] < 1))
 		return;
 	
-	NSEnumerator		*msgIt = [a objectEnumerator];
-	VVMIDIMessage		*msgPtr;
+	NSEnumerator		*msgIt = nil;
+	VVMIDIMessage		*msgPtr = nil;
 	
 	//	first send the message to all the items in the dest array (each node has its own enable flag)
 	pthread_mutex_lock(&arrayLock);
+		msgIt = [a objectEnumerator];
 		while (msgPtr = [msgIt nextObject])
 			[destArray makeObjectsPerformSelector:@selector(sendMsgs:) withObject:a];
 	pthread_mutex_unlock(&arrayLock);
@@ -200,6 +201,45 @@
 	//	now send the msg to the virtual output destination
 	if (virtualDest != nil)
 		[virtualDest sendMsgs:a];
+}
+
+//	finds a destination node with a given name
+- (VVMIDINode *) findDestNodeNamed:(NSString *)n	{
+	if ((n==nil)||([n length]<1))
+		return nil;
+	
+	VVMIDINode			*returnMe = nil;
+	NSEnumerator		*nodeIt = nil;
+	VVMIDINode			*nodePtr = nil;
+	
+	pthread_mutex_lock(&arrayLock);
+		nodeIt = [destArray objectEnumerator];
+		while ((nodePtr = [nodeIt nextObject]) && (returnMe == nil))	{
+			if ([[nodePtr name] isEqualToString:n])
+				returnMe = nodePtr;
+		}
+	pthread_mutex_unlock(&arrayLock);
+	
+	return returnMe;
+}
+//	finds a source node with a given name
+- (VVMIDINode *) findSourceNodeNamed:(NSString *)n	{
+	if ((n==nil)||([n length]<1))
+		return nil;
+	
+	VVMIDINode			*returnMe = nil;
+	NSEnumerator		*nodeIt = nil;
+	VVMIDINode			*nodePtr = nil;
+	
+	pthread_mutex_lock(&arrayLock);
+		nodeIt = [sourceArray objectEnumerator];
+		while ((nodePtr = [nodeIt nextObject]) && (returnMe == nil))	{
+			if ([[nodePtr name] isEqualToString:n])
+				returnMe = nodePtr;
+		}
+	pthread_mutex_unlock(&arrayLock);
+	
+	return returnMe;
 }
 
 //	these methods exist so subclasses of me can override them to use custom subclasses of VVMIDINode
@@ -222,6 +262,12 @@
 }
 - (NSArray *) destArray	{
 	return destArray;
+}
+- (VVMIDINode *) virtualSource	{
+	return virtualSource;
+}
+- (VVMIDINode *) virtualDest	{
+	return virtualDest;
 }
 - (id) delegate	{
 	return delegate;
