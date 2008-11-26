@@ -307,7 +307,7 @@
 	currentPacket = MIDIPacketListInit(packetList);
 }
 - (void) sendMsgs:(NSArray *)a	{
-	NSLog(@"VVMIDINode:sendMsgs:");
+	//NSLog(@"VVMIDINode:sendMsgs:");
 	if ((enabled!=YES) || (sender!=YES) || (a==nil) || ([a count]<1))
 		return;
 	//NSLog(@"\t\tsending to %@",name);
